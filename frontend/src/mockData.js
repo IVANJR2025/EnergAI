@@ -7,8 +7,7 @@ export const mockPlant = {
   commissioningDate: "2023-03-10",
   coverSolarImage:
     "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
-  coverWindImage:
-    "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=1200&q=80"
+  coverWindImage: "/images/cover-wind-turbines.png"
 };
 
 export const mockProduction = {
