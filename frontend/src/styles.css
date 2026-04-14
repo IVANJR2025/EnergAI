@@ -1,0 +1,99 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background-color: #080b14;
+  color: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #11182a 0%, #080b14 45%);
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.hero {
+  padding: 24px;
+  border: 1px solid #1f2937;
+  border-radius: 16px;
+  background: linear-gradient(130deg, #101828, #121c2f);
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 1.8rem;
+}
+
+.hero p {
+  margin: 0;
+  color: #93a3b8;
+}
+
+.panel {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.panel-title {
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #c7d2fe;
+}
+
+.chart-wrap {
+  width: 100%;
+  height: 360px;
+}
+
+.kpi-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.kpi-table th,
+.kpi-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #263247;
+}
+
+.kpi-table th {
+  color: #9ca3af;
+}
+
+.trend-up {
+  color: #4ade80;
+}
+
+.trend-down {
+  color: #f87171;
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.client-grid span {
+  display: block;
+  font-size: 0.82rem;
+  color: #8fa0b8;
+}
+
+.client-grid strong {
+  display: block;
+  margin-top: 6px;
+}
