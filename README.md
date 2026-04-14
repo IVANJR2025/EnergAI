@@ -1,5 +1,7 @@
 # EnergAI - MVP Fase 2
 
+Plataforma inteligente de gestao de energia com ML e visao computacional.
+
 Base inicial de uma plataforma de gestao de energia solar/eolica com:
 
 - Dashboard principal com grafico de 3 eixos (potencia, energia e irradiancia)
