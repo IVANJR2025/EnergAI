@@ -20,7 +20,7 @@
 
 ## Documentação de negócio e técnica
 
-**[Plano de negócio, funcionalidades, integrações ML/DL/CV e tutorial (cloud, treino, deploy)](docs/PLANO_DE_NEGOCIO_E_ROADMAP_TECNICO.md)**
+**[Plano de negócio, funcionalidades, integrações ML/DL/CV e tutorial (cloud, treino, deploy)](docs/PLANO_DE_NEGOCIO_E_ROADMAP_TECNICO.md)** · [PDF](docs/PLANO_DE_NEGOCIO_E_ROADMAP_TECNICO.pdf)
 
 Inclui: inventário das funcionalidades atuais, diferenciais para PT/Europa, benefícios financeiros (enquadramento), integrações futuras (XGBoost, séries temporais, YOLO, MLOps) e passos práticos de implementação.
 

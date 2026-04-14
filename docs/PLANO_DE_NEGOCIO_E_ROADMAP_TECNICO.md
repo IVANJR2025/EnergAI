@@ -187,3 +187,7 @@ A EnergAI posiciona-se como **plataforma de asset intelligence** para renovávei
 ---
 
 *Documento gerado para apoio a pitch, propostas técnicas e alinhamento de roadmap. Valores financeiros ilustrativos não constituem garantia de performance.*
+
+---
+
+**PDF:** versão exportada em [PLANO_DE_NEGOCIO_E_ROADMAP_TECNICO.pdf](PLANO_DE_NEGOCIO_E_ROADMAP_TECNICO.pdf). Para regenerar: `pip install fpdf2 markdown` e `python docs/md_to_pdf.py docs/PLANO_DE_NEGOCIO_E_ROADMAP_TECNICO.md`.
