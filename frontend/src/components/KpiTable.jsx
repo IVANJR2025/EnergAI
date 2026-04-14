@@ -1,13 +1,14 @@
-export default function KpiTable({ kpis }) {
+/** @param {{ kpis: { key: string; label: string; value: number; unit: string; trend: number }[]; title: string; thIndicator: string; thValue: string; thTrend: string }} props */
+export default function KpiTable({ kpis, title, thIndicator, thValue, thTrend }) {
   return (
-    <div className="panel">
-      <div className="panel-title">KPIs Operacionais</div>
+    <div className="panel nested-panel">
+      <div className="panel-title">{title}</div>
       <table className="kpi-table">
         <thead>
           <tr>
-            <th>Indicador</th>
-            <th>Valor</th>
-            <th>Tendencia</th>
+            <th>{thIndicator}</th>
+            <th>{thValue}</th>
+            <th>{thTrend}</th>
           </tr>
         </thead>
         <tbody>

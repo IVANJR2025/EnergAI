@@ -9,9 +9,10 @@ import {
   YAxis
 } from "recharts";
 
-export default function DashboardChart({ data }) {
+/** @param {{ data: any[]; locale: string; labels: { title: string; power: string; energy: string; irradiance: string } }} props */
+export default function DashboardChart({ data, locale, labels }) {
   const chartData = data.map((point) => ({
-    timestamp: new Date(point.timestamp).toLocaleTimeString("pt-PT", {
+    timestamp: new Date(point.timestamp).toLocaleTimeString(locale, {
       hour: "2-digit",
       minute: "2-digit"
     }),
@@ -21,15 +22,15 @@ export default function DashboardChart({ data }) {
   }));
 
   return (
-    <div className="panel">
-      <div className="panel-title">Geracao em Tempo Real</div>
+    <div className="panel nested-panel">
+      <div className="panel-title">{labels.title}</div>
       <div className="chart-wrap">
         <ResponsiveContainer width="100%" height={360}>
           <LineChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#2a3142" />
-            <XAxis dataKey="timestamp" stroke="#9ca3af" />
-            <YAxis yAxisId="power" orientation="left" stroke="#3b82f6" />
-            <YAxis yAxisId="energy" orientation="right" stroke="#22c55e" />
+            <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+            <XAxis dataKey="timestamp" stroke="#64748b" />
+            <YAxis yAxisId="power" orientation="left" stroke="#2563eb" />
+            <YAxis yAxisId="energy" orientation="right" stroke="#16a34a" />
             <YAxis yAxisId="irradiance" hide />
             <Tooltip />
             <Legend />
@@ -37,8 +38,8 @@ export default function DashboardChart({ data }) {
               yAxisId="power"
               type="monotone"
               dataKey="potenciaKw"
-              name="Potencia Ativa (kW)"
-              stroke="#3b82f6"
+              name={labels.power}
+              stroke="#2563eb"
               strokeWidth={2}
               dot={false}
             />
@@ -46,8 +47,8 @@ export default function DashboardChart({ data }) {
               yAxisId="energy"
               type="monotone"
               dataKey="energiaKwh"
-              name="Energia Ativa (kWh)"
-              stroke="#22c55e"
+              name={labels.energy}
+              stroke="#16a34a"
               strokeWidth={2}
               dot={false}
             />
@@ -55,8 +56,8 @@ export default function DashboardChart({ data }) {
               yAxisId="irradiance"
               type="monotone"
               dataKey="irradiancia"
-              name="Irradiancia (W/m2)"
-              stroke="#f59e0b"
+              name={labels.irradiance}
+              stroke="#d97706"
               strokeWidth={2}
               dot={false}
             />
