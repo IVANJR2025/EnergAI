@@ -1,0 +1,4 @@
+# Dependencias pesadas (GPU/CUDA via pip em Linux). Instalar apenas em dev ou imagem dedicada.
+xgboost
+opencv-python
+torch

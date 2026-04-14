@@ -1,7 +1,2 @@
-fastapi
-uvicorn
-pydantic
-python-multipart
-xgboost
-opencv-python
-torch
+-r requirements-api.txt
+-r requirements-ml.txt
